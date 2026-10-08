@@ -15,7 +15,7 @@ interface AssistantChatProps {
 }
 
 const agentApiUrl = (
-  process.env.NEXT_PUBLIC_AGENT_API_URL || "http://localhost:8000"
+  process.env.NEXT_PUBLIC_AGENT_API_URL || "https://agent-services-production-5526.up.railway.app"
 ).replace(/\/+$/, "");
 
 function isChatResponse(value: unknown): value is ChatResponse {
